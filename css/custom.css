@@ -1,0 +1,143 @@
+/*-------------------------------------------------------------------------*/
+/* Define variables
+/*-------------------------------------------------------------------------*/
+:root {
+	/* Margins */
+	--margin-primary: 8px;
+
+	/* Fonts */
+	--font-family-primary: 'Vazir FD', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*-------------------------------------------------------------------------*/
+/* Browser reset
+/*-------------------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+	position: relative;
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+} *:focus {outline: none;}
+
+ul {
+	list-style: none;
+}
+
+/*-------------------------------------------------------------------------*/
+/* Globally applied styles
+/*-------------------------------------------------------------------------*/
+html,
+body {
+	flex: 1;
+	-ms-flex: 1;
+	-webkit-box-flex: 1;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	min-height: 100vh;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	background-color: rgba(27, 32, 33, 0.88);
+	color: #8a8a8a;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: var(--font-family-primary);
+}
+
+
+/*-------------------------------------------------------------------------*/
+/* Custom css codes
+/*-------------------------------------------------------------------------*/
+.tagBall{width:800px;height:800px;margin:50px auto;position:relative;}
+.tag{display:block;position:absolute;left:0px;top:0px;color:#000;text-decoration:none;font-size:15px;font-weight:bold;}
+.tag:hover{border:1px solid #666;}
+
+slider-bg {
+  background: #010;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  overflow: hidden;
+} 
+.scanlines {
+  pointer-events: none;
+  background-image: -webkit-linear-gradient(#020 0%, transparent 25%);
+  background-image: linear-gradient(to , transparent 25%);
+  background-size: 4px 4px;
+}
+
+.editor-text {
+  color: #9F9;
+  font-size: 2em;
+  text-shadow: 1px 0px 5px #0F0, -1px 0px 2px #0F0;
+  /* font-family: Ubuntu Mono; */
+  font-weight: light;
+  line-height: 2em;
+  /* margin-top: 2em; */
+}
+
+/*-------------------------------------------------------------------------*/
+/* Social buttons
+/*-------------------------------------------------------------------------*/
+#telegram,
+#twitter,
+#email {
+  font-size: 2em;
+  background-color: #1c2122;
+  color: #fff;
+  border-radius: 100%;
+  padding-right: 10px;
+  margin: 0 0.5em;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 0.2em #0072ff, 0 0 0.5em #0072ff, 0 0 0.75em #0072ff, 0 0 1em #0072ff;
+}
+#twitter {
+  animation-delay: 0.3s;
+}
+#telegram {
+  animation-delay: 0.7s;
+}
+#email {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/*-------------------------------------------------------------------------*/
+/* Bootstrap Colors
+/*-------------------------------------------------------------------------*/
+
+.ubuntu {
+  color: #e9500e;
+}
+
+.network {
+  color: #0096FF;
+}
+
+.coding {
+  color: #5BB318;
+}
+
+.lightening {
+  color: #F4FCD9;
+}
