@@ -33,6 +33,13 @@ ul {
 /*-------------------------------------------------------------------------*/
 /* Globally applied styles
 /*-------------------------------------------------------------------------*/
+@font-face {
+	font-family: "vazir";
+	src: url("../fonts/vazir.ttf") format('truetype');
+	font-weight: normal;
+	font-display: swap;
+}
+
 html,
 body {
 	flex: 1;
@@ -51,6 +58,7 @@ body {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
+	font-family: "vazir";
 }
 
 
@@ -78,6 +86,7 @@ slider-bg {
   color: #9F9;
   font-size: 2em;
   text-shadow: 1px 0px 5px #0F0, -1px 0px 2px #0F0;
+	font-family: "vazir";
   font-weight: light;
   line-height: 2em;
 }
