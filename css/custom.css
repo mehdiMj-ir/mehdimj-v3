@@ -24,7 +24,11 @@
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-} *:focus {outline: none;}
+}
+
+*:focus {
+	outline: none;
+}
 
 ul {
 	list-style: none;
@@ -65,30 +69,49 @@ body {
 /*-------------------------------------------------------------------------*/
 /* Custom css codes
 /*-------------------------------------------------------------------------*/
-.tagBall{width:800px;height:800px;margin:50px auto;position:relative;}
-.tag{display:block;position:absolute;left:0px;top:0px;color:#000;text-decoration:none;font-size:15px;font-weight:bold;}
-.tag:hover{border:1px solid #666;}
+.tagBall {
+	width: 800px;
+	height: 800px;
+	margin: 50px auto;
+	position: relative;
+}
+
+.tag {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: #000;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.tag:hover {
+	border: 1px solid #666;
+}
 
 slider-bg {
-  background: #010;
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
-  overflow: hidden;
-} 
+	background: #010;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+	overflow: hidden;
+}
+
 .scanlines {
-  pointer-events: none;
-  background-image: -webkit-linear-gradient(#020 0%, transparent 25%);
-  background-image: linear-gradient(to , transparent 25%);
-  background-size: 4px 4px;
+	pointer-events: none;
+	background-image: -webkit-linear-gradient(#020 0%, transparent 25%);
+	background-image: linear-gradient(to, transparent 25%);
+	background-size: 4px 4px;
 }
 
 .editor-text {
-  color: #9F9;
-  font-size: 2em;
-  text-shadow: 1px 0px 5px #0F0, -1px 0px 2px #0F0;
+	color: #9F9;
+	font-size: 2em;
+	text-shadow: 1px 0px 5px #0F0, -1px 0px 2px #0F0;
 	font-family: "vazir";
-  font-weight: light;
-  line-height: 2em;
+	font-weight: light;
+	line-height: 2em;
 }
 
 /*-------------------------------------------------------------------------*/
@@ -97,32 +120,36 @@ slider-bg {
 #telegram,
 #twitter,
 #email {
-  font-size: 2em;
-  background-color: #1c2122;
-  color: #fff;
-  border-radius: 100%;
-  padding-right: 10px;
-  margin: 0 0.5em;
-  animation: animate 3s linear infinite;
-  text-shadow: 0 0 0.2em #0072ff, 0 0 0.5em #0072ff, 0 0 0.75em #0072ff, 0 0 1em #0072ff;
+	font-size: 2em;
+	background-color: #1c2122;
+	color: #fff;
+	border-radius: 100%;
+	padding-right: 10px;
+	margin: 0 0.5em;
+	animation: animate 3s linear infinite;
+	text-shadow: 0 0 0.2em #0072ff, 0 0 0.5em #0072ff, 0 0 0.75em #0072ff, 0 0 1em #0072ff;
 }
+
 #twitter {
-  animation-delay: 0.3s;
+	animation-delay: 0.3s;
 }
+
 #telegram {
-  animation-delay: 0.7s;
+	animation-delay: 0.7s;
 }
+
 #email {
-  animation-delay: 0.1s;
+	animation-delay: 0.1s;
 }
 
 @keyframes animate {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
+	from {
+		filter: hue-rotate(0deg);
+	}
+
+	to {
+		filter: hue-rotate(360deg);
+	}
 }
 
 /*-------------------------------------------------------------------------*/
@@ -130,17 +157,27 @@ slider-bg {
 /*-------------------------------------------------------------------------*/
 
 .ubuntu {
-  color: #e9500e;
+	color: #e9500e;
 }
 
 .network {
-  color: #0096FF;
+	color: #0096FF;
 }
 
 .coding {
-  color: #5BB318;
+	color: #5BB318;
 }
 
 .lightening {
-  color: #F4FCD9;
+	color: #F4FCD9;
+}
+
+.mj-blur {
+	-webkit-filter: blur(5px);
+	transition: 1s ease;
+}
+
+.mj-blur:hover, mj-blur:active {
+	-webkit-filter: blur(0px);
+	transition: 1s ease;
 }
